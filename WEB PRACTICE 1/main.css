@@ -1,54 +1,99 @@
-#First {
-    color: aqua;
-    font-size: 35px ;
-    font: 50;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.line2 {
-    color :rgb(68, 97, 122);
-    font-size: 25px ;
-    font : 400;
+
+body {
+  height: 95vh;
+  /* background-color: hsla(209 70% 3% / 100%);  */ /* For dark theme */
+  background-color: hsl(214, 20%, 85%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.button {
-    
-        padding: 10px 20px;
-        background-color: rgb(74, 129, 230);
-        color: white;
-        text-decoration: none; /* Bỏ gạch chân */
-        border-radius: 30px 25px ;
-        font-size: 20px;
-        display: inline-block; /* Đảm bảo rằng thẻ <a> hiển thị dưới dạng block */
-        margin: 5px 0; /* Thêm khoảng cách giữa các nút */
-    } 
-    .button:hover {
-        background-color: rgb(3, 3, 3);
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
-.LocketB {
-    padding : 10px 20px;
-    background-color : rgb(231, 228, 25);
-    color : white;
-    text-decoration : none;
-    border-radius : 30px 25px;
-    font-size : 20px;
-    display : inline-block;
-    margin : 5px 0;
+
+.icon {
+  font-size: 2rem;
+  color: hsl(202, 100%, 12%);
+  transition: 0.5s ease;
+  z-index: 2;
 }
-.NGLL {
-    padding : 10px 20px;
-    background-color: rgb(118, 26, 146);
-    color : white;
-    text-decoration: none;
-    border-radius : 30px 25px;
-    font-size : 20px;
-    display : inline-block;
-    margin : 5px 0;
+.icon {
+  text-decoration: none;
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 14px;
+ /* background-color: hsla(209 20% 70% / 20%); */ /* For dark theme */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 20px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 5px 4px 6px -2px;
 }
-.LL {
-    padding : 10px 20px;
-    background-color :rgb(0, 70, 201);
-    color : white;
-    text-decoration : none;
-    border-radius : 30px 25px;
-    font-size : 20px;
-    display : inline-block;
-    margin : 5px 0;
+
+.icon:has(.fa-facebook) > i{
+
+  color : rgb(0, 32, 214);
+  font-size : 2.0rem;
+  transition: all 0.3s;
 }
+.icon:has(.fa-instagram) > i {
+    color:  linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    filter : drop-shadow(10px 5px 10px linear-gradient(45deg  #f9ce34, #ee2a7b, #6228d7));
+    font-size: 2.0rem;
+    transition: all 0.3s;
+}
+  .icon:has(.fa-linkedin-in) > i {
+    color: #4a71dd;
+    font-size: 2.0rem;
+    transition: all 0.2s;
+  }
+  .icon:has(.fa-youtube) > i {
+    color: #da1f4e;
+    font-size: 2.0rem;
+    transition: all 0.2s;
+  }
+
+.icon:has(.fa-x-twitter) > i {
+  color: #000000;
+  font-size: 2.0rem;
+  transition: all 0.2s;
+}
+.icon:has(.fa-github) > i {
+    color: #382828;
+    font-size: 2.0rem;
+    transition: all 0.2s;
+}
+
+
+.icon:hover > i {
+  filter : blur(1.0px);
+  scale: 1.3;
+  color: icon;
+}
+
+/* .icon:before {
+  background: var(--color);
+  content: "";
+  position: absolute;
+  width: 150%;
+  height: 140%;
+  left: -120%;
+  top: 95%;
+  transform: rotate(60deg);
+  border-top-left-radius: 10px;
+
+} */
