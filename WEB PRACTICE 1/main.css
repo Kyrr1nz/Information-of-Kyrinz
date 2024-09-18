@@ -1,4 +1,5 @@
 
+
 *,
 *::before,
 *::after {
@@ -6,6 +7,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+#welcome-text {
+  color : #102629;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  text-align: center;
+  display : flex;
+  margin : 0 auto;
+  position: absolute;
+  transform: 
+  translate(-50%,-50%);
+  top : 7%;
+  left: 50%;
+}
+.e12{
+  font-size: 1.7rem;
+  text-align: center;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  display : flex;
+  margin : 0 auto;
+  top : 15%;
+  left: 50%;
+  transform: 
+  translate(-50%,-50%);
+}
+
+
 
 body {
   height: 95vh;
@@ -73,7 +101,7 @@ body {
   transition: all 0.2s;
 }
 .icon:has(.fa-github) > i {
-    color: #382828;
+    color: #3b1d1d;
     font-size: 2.0rem;
     transition: all 0.2s;
 }
@@ -83,15 +111,4 @@ body {
   filter : blur(1.0px);
   scale: 1.3;
   color: icon;
-}
-#welcome-text {
-  color : linear-gradient(40deg (#1b4dd6,#ff14c4, #bae716));
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
-  text-align: center;
-  display : flex;
-  margin : 0 auto;
-  position: fixed;
-  top : 10%;
-  left: 45%;
 }
