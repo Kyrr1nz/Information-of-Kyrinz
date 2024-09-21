@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All my C dev</title>
+    <link rel="stylesheet" href="Bai 1.cpp">
+</head>
+<body>
+    <h1>Welcome to the page!</h1>
+    <button onclick="changeURL()">Change URL</button>
+
+    <script>
+        function changeURL() {
+            // Thay đổi URL mà không tải lại trang
+            history.pushState(null, null, '/new-url');
+            document.title = "New Page Title"; // Có thể thay đổi tiêu đề trang
+        }
+    </script>
+</body>
+</html>
