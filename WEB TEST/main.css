@@ -1,0 +1,33 @@
+/* Đây là external - kiểu mà dev thiết kế nma ở bên ngoài á */
+h1 {
+    color :rgb(112, 24, 184);
+    font-size : 30px;
+    font: 400;
+}
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 2;
+    overflow: hidden;
+    background-color: #440e0e;
+}
+#first{
+    color :rgb(57, 216, 203);
+    font-size : 40px;
+}
+#second{
+    color : rgb(12,42,41);
+    font-size : 30px;
+}
+.box{
+     width: 50%;/*  Đoạn này chỉ tỉ lệ của 1 hình cảnh trong 1 web box*/
+    height: 200px;
+    background-color: rgb(150, 21, 255);
+
+}
+/* html {
+    font-size: 5%;
+} */
+/* h1{
+    font-size : 5% ;
+} */
